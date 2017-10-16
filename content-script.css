@@ -1,0 +1,18 @@
+.navigation-buttons-container {
+    float: right;
+}
+
+.navigation-button {
+    border: 0;
+    border-radius: 1000px;
+    background-color: #f1f1f1;
+    color: #000;
+    padding: 5px 10px;
+    margin: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.navigation-button:hover {
+    background-color: #ddd;
+}

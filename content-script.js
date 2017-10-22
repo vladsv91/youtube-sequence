@@ -52,7 +52,7 @@ function goToVideo(toNext) {
 
   function recursiveRetrieveVideos(nextPageToken, getFirstVideoFromCollection) {
     sendRequest({
-      url: 'https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyCgIESCoZyXSm9mXl4txgfncFhSdGrbUjw&maxResults=50&order=date' +
+      url: 'https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyCgIESCoZyXSm9mXl4txgfncFhSdGrbUjw&maxResults=50&order=date&type=video' +
         '&channelId=' + currentChannelId +
         '&pageToken=' + (nextPageToken || ''),
       callback: function() {
